@@ -65,7 +65,7 @@ type GRPCServer interface {
 	Export(context.Context, ExportRequest) (ExportResponse, error)
 
 	// unexported disallow implementation of the GRPCServer.
-	unexported()
+	//unexported()
 }
 
 var _ GRPCServer = (*UnimplementedGRPCServer)(nil)
